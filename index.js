@@ -2,7 +2,7 @@ var vhost = require("vhost");
 var express = require("express");
 
 function default_page(req, res) {
-    res.send("This feature is currently not supported");
+    res.send("Are you sure?");
 }
 
 function git_update(req, res) {
