@@ -13,6 +13,9 @@ function git_update(req, res) {
         console.log(data);
         gtPull.stdin.write("yes\n");
     });
+    gitPull.stderr.on('data', function(data) {
+        console.log(data);
+    });
     res.send("Updated");
 }
 
