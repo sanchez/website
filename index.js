@@ -12,7 +12,7 @@ function git_update(req, res) {
 
 express()
     .use(vhost("hello.*", require("./hello.js").app))
-    .get("/git", git_update)
+    .post("/git", git_update)
     .listen(80, function () {
         console.log("Server created");
     });
