@@ -11,7 +11,7 @@ function git_update(req, res) {
     var gitPull = spawn("git", ["spawn"]);
     gitPull.stdout.on('data', function(data) {
         console.log(data);
-        gtPull.stdin.write("yes\n");
+        gitPull.stdin.write("yes\n");
     });
     gitPull.stderr.on('data', function(data) {
         console.log(data);
