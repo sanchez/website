@@ -18,6 +18,6 @@ express()
     .use(vhost("hello.*", require("./hello.js").app))
     .post("/git", git_update)
     .get("/", default_page)
-    .listen(80, function () {
+    .listen(3000, function () {
         console.log("Server created");
     });
