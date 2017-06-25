@@ -7,12 +7,11 @@ function default_page(req, res) {
 
 function git_update(req, res) {
     console.log("Updating Git Repo");
-    var exec = require("child_process").exec;
-    exec("git pull", function(error, stdout, stderr) {
-        if (error !== undefined) {
-            console.log("Error: " + error);
-            console.log("stderr:" + stderr);
-        }
+    var spawn = require("child_process").spawn;
+    var gitPull = spawn("git", ["spawn"]);
+    gitPull.stdout.on('data', function(data) {
+        console.log(data);
+        gtPull.stdin.write("yes\n");
     });
     res.send("Updated");
 }
