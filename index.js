@@ -5,10 +5,14 @@ function default_page(req, res) {
     res.send("This feature is currently not supported");
 }
 
+function git_update(req, res) {
+    console.log("Updating Git Repo");
+    res.send("Updated");
+}
+
 express()
     .use(vhost("hello.*", require("./hello.js").app))
-    .use(vhost("git.*", require("./update.js").app))
-    .use(vhost("*", default_page))
+    .get("/git", git_update)
     .listen(80, function () {
         console.log("Server created");
     });
