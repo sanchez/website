@@ -9,6 +9,6 @@ express()
     .use(vhost("hello.*", require("./hello.js").app))
     .use(vhost("git.*", require("./update.js").app))
     .use(vhost("*", default_page))
-    .listen(3000, function () {
+    .listen(80, function () {
         console.log("Server created");
     });
