@@ -2,7 +2,7 @@ var vhost = require("vhost");
 var express = require("express");
 
 function default_page(req, res) {
-    res.send("Are you sure?");
+    res.send("Hello World");
 }
 
 function git_update(req, res) {
