@@ -9,13 +9,8 @@ function git_update(req, res) {
     console.log("Updating Git Repo");
     var spawn = require("child_process").spawn;
     var gitPull = spawn("git", ["spawn"]);
-    gitPull.stdout.on('data', function(data) {
-        console.log(data);
-        gitPull.stdin.write("yes\n");
-    });
-    gitPull.stderr.on('data', function(data) {
-        console.log(data);
-    });
+    var spawn = require("child_process").spawn;
+    spawn("git", ["pull"], { stdio: "inherit" });
     res.send("Updated");
 }
 
