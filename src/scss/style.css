@@ -2,7 +2,11 @@
   background-color: #fff;
   color: #000;
   margin: 0em;
-  border: 0em; }
+  border: 0em;
+  font-family: "Comic Sans MS", cursive, sans-serif; }
+
+html, body, .height {
+  height: 100%; }
 
 .container {
   margin-left: auto;
@@ -186,5 +190,14 @@ h3 {
 
 h3::first-letter {
   color: #49075E; }
+
+.middleman {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
