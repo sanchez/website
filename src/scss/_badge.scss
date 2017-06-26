@@ -1,0 +1,10 @@
+
+.badge {
+    font-size: 0.5em;
+    min-width: 3em;
+    padding: 0.5em;
+    text-align: center;
+    float: right;
+    @include rounded(0.25em);
+    background-color: $primary;
+}
