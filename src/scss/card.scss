@@ -7,6 +7,10 @@
     width: 100%;
     padding: 1em;
     @include rounded();
-    @include box-shadow(10px, 10px, 10px, #000);
     @include border(0.1em, lighten(#000, 75%));
+    transition: box-shadow 0.5s
+}
+
+.card:hover {
+    @include box-shadow(10px, 10px, 10px, mix($bg-color, #000));
 }
