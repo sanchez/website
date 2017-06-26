@@ -1,6 +1,6 @@
 @import "variables";
 
-* {
+body {
     background-color: $bg-color;
     color: $text-color;
     margin: 0em;
@@ -12,7 +12,13 @@ html, body, .height {
     height: 100%;
 }
 
+.content {
+    padding: 2em;
+}
+
+@import "colors";
 @import "grid";
 @import "card";
 @import "heading";
 @import "middleman";
+@import "badge";

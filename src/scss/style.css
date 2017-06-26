@@ -1,4 +1,4 @@
-* {
+body {
   background-color: #fff;
   color: #000;
   margin: 0em;
@@ -7,6 +7,57 @@
 
 html, body, .height {
   height: 100%; }
+
+.content {
+  padding: 2em; }
+
+.white {
+  background-color: #FFFFFF !important; }
+
+.white-text {
+  color: #FFFFFF !important; }
+
+.black {
+  background-color: #000000 !important; }
+
+.black-text {
+  color: #000000 !important; }
+
+.green {
+  background-color: #22BA00 !important; }
+
+.green-text {
+  color: #22BA00 !important; }
+
+.orange {
+  background-color: #FF6138 !important; }
+
+.orange-text {
+  color: #FF6138 !important; }
+
+.red {
+  background-color: #BA0900 !important; }
+
+.red-text {
+  color: #BA0900 !important; }
+
+.blue {
+  background-color: #0B75CB !important; }
+
+.blue-text {
+  color: #0B75CB !important; }
+
+.yellow {
+  background-color: #EFC82B !important; }
+
+.yellow-text {
+  color: #EFC82B !important; }
+
+.purple {
+  background-color: #49075E !important; }
+
+.purple-text {
+  color: #49075E !important; }
 
 .container {
   margin-left: auto;
@@ -167,7 +218,6 @@ html, body, .height {
 .card {
   background-color: #fff;
   margin: 2em;
-  width: 100%;
   padding: 1em;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -182,14 +232,19 @@ html, body, .height {
   -moz-box-shadow: 10px 10px 10px gray;
   box-shadow: 10px 10px 10px gray; }
 
-h1, h2 {
-  color: #49075E; }
+h1, h2, h3 {
+  color: #49075E;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
 
 h3 {
   color: #000; }
 
 h3::first-letter {
   color: #49075E; }
+
+.align-right {
+  text-align: right; }
 
 .middleman {
   display: flex;
@@ -199,5 +254,16 @@ h3::first-letter {
   align-items: center;
   align-content: center;
   height: 100%; }
+
+.badge {
+  font-size: 0.5em;
+  min-width: 3em;
+  padding: 0.5em;
+  text-align: center;
+  float: right;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
+  background-color: #49075E; }
 
 /*# sourceMappingURL=style.css.map */
