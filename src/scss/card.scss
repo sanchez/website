@@ -1,0 +1,12 @@
+
+@import "mixins";
+
+.card {
+    background-color: $card-color;
+    margin: 2em;
+    width: 100%;
+    padding: 1em;
+    @include rounded();
+    @include box-shadow(10px, 10px, 10px, #000);
+    @include border(0.1em, lighten(#000, 75%));
+}
