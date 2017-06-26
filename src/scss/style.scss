@@ -16,6 +16,11 @@ html, body, .height {
     padding: 2em;
 }
 
+ul {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
 @import "colors";
 @import "grid";
 @import "card";

@@ -11,6 +11,10 @@ html, body, .height {
 .content {
   padding: 2em; }
 
+ul {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
+
 .white {
   background-color: #FFFFFF !important; }
 
