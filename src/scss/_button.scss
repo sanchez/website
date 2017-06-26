@@ -1,0 +1,15 @@
+
+.button-outline {
+    color: $bg-color;
+    background-color: $primary;
+    text-decoration: none;
+    @include border(0.1em, $bg-color);
+    @include rounded(0.2em);
+    padding: 0.4em;
+    transition: all 1s;
+}
+
+.button-outline:hover {
+    border-color: $secondary;
+    color: $secondary;
+}

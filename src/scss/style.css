@@ -270,4 +270,21 @@ h3::first-letter {
   border-radius: 0.25em;
   background-color: #49075E; }
 
+.button-outline {
+  color: #fff;
+  background-color: #49075E;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: #fff;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  padding: 0.4em;
+  transition: all 1s; }
+
+.button-outline:hover {
+  border-color: #0B75CB;
+  color: #0B75CB; }
+
 /*# sourceMappingURL=style.css.map */
