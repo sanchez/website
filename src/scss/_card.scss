@@ -4,7 +4,6 @@
 .card {
     background-color: $card-color;
     margin: 2em;
-    width: 100%;
     padding: 1em;
     @include rounded();
     @include border(0.1em, lighten(#000, 75%));
