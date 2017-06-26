@@ -1,6 +1,8 @@
 
-h1, h2 {
+h1, h2, h3 {
     color: $primary;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
 }
 
 h3 {
@@ -9,4 +11,8 @@ h3 {
 
 h3::first-letter {
     color: $primary;
+}
+
+.align-right {
+    text-align: right;
 }
