@@ -1,0 +1,12 @@
+
+h1, h2 {
+    color: $primary;
+}
+
+h3 {
+    color: $text-color;
+}
+
+h3::first-letter {
+    color: $primary;
+}
