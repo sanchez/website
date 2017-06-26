@@ -1,8 +1,22 @@
 var vhost = require("vhost");
 var express = require("express");
+var fs = require("fs");
+
+var indexPageContent;
+fs.readFile("./index.html", function(err, data) {
+    if (err === undefined) {
+        console.log("Error occured while reading index file");
+        console.log(err);
+        indexPageContent = "Hello There, something went wrong on the server";
+    } else {
+        indexPageContent = data;
+    }
+});
 
 function default_page(req, res) {
-    res.send("Hello World!");
+    console.log("Get /");
+    res.type('html');
+    res.send(indexPageContent);
 }
 
 function git_update(req, res) {
@@ -15,6 +29,7 @@ function git_update(req, res) {
 }
 
 express()
+    .use(express.static("src"))
     .use(vhost("hello.*", require("./hello.js").app))
     .post("/git", git_update)
     .get("/", default_page)
