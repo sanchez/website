@@ -31,6 +31,7 @@ function git_update(req, res) {
 express()
     .use(express.static("src"))
     .use(vhost("hello.*", require("./hello.js").app))
+    .get("/aphrodite", require("../aphrodite").app)
     .post("/git", git_update)
     .get("/", default_page)
     .listen(3000, function () {
