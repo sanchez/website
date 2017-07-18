@@ -2,3 +2,5 @@ node_modules
 src/.sass-cache/
 src/scss/.sass-cache/
 *.map
+.vscode/
+.sass-cache/
