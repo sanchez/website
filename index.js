@@ -29,8 +29,10 @@ function git_update(req, res) {
 }
 
 express()
+    .set("view engine", "ejs")
     .use(express.static("src"))
     .use(vhost("hello.*", require("./hello.js").app))
+    .use(vhost("aphrodite.*", require("./aphrodite.js").app))
     .post("/git", git_update)
     .get("/", default_page)
     .listen(3000, function () {
