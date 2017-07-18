@@ -4,7 +4,9 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "sass aphrodite/style/sass/style.scss aphrodite/style/style.css",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

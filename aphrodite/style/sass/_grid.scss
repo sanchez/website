@@ -1,0 +1,43 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $grid-max-width;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+@for $i from 1 through $grid-columns {
+    .column-#{$i}, .column-sm-#{$i} {
+        width: 100% / $grid-columns * $i;
+    }
+}
+
+@media only screen and (min-width: $layout-medium) {
+    @for $i from 1 through $grid-columns {
+        .column-md-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}
+
+@media only screen and (min-width: $layout-large) {
+    @for $i from 1 through $grid-columns {
+        .column-lg-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}
+
+@media only screen and (min-width: $layout-xlarge) {
+    @for $i from 1 through $grid-columns {
+        .column-xl-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}

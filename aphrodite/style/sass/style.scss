@@ -1,0 +1,16 @@
+@import "variables";
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+    margin: 0em;
+    border: 0em;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+@import "colors";
+@import "grid";

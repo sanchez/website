@@ -1,0 +1,19 @@
+$colors: (
+    "white": #FFFFFF,
+    "black": #000000,
+    "green": #22BA00,
+    "orange": #FF6138,
+    "red": #BA0900,
+    "blue": #0B75CB,
+    "yellow": #EFC82B,
+    "purple": #49075E
+) !default;
+
+@each $color_name, $color in $colors {
+    .#{$color_name} {
+        background-color: $color !important;
+    }
+    .#{$color_name}-text {
+        color: $color !important;
+    }
+}
