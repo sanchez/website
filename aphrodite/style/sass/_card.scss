@@ -1,0 +1,8 @@
+@import "mixins";
+
+.card {
+    background-color: $card-color;
+    margin: 2em;
+    padding: 1em;
+    @include border(0.1em, $card-border);
+}

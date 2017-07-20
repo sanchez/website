@@ -2,12 +2,24 @@
 $primary: #FF6138;
 $secondary: #0B75CB;
 $text-color: #000;
-$bg-color: #fff;
+$bg-color: #eee;
 
 $layout-small: 35.5em;
 $layout-medium: 48em;
 $layout-large: 64em;
 $layout-xlarge: 80em;
 
+// Grid styling
 $grid-columns: 12;
 $grid-max-width: $layout-xlarge;
+
+// Card Styling
+$card-color: #fff;
+$card-border: #fff;
+
+// Header Styling
+$header-primary: $primary;
+
+// Footer Styling
+$footer-primary: $primary;
+$footer-darker-primary: darken($primary, 20%);

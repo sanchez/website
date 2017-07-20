@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    main {
+        flex: 1 0 auto;
+    }
+}
+
+footer {
+    background-color: $footer-primary;
+    min-height: 8em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .base-line {
+        background-color: $footer-darker-primary;
+    }
+
+    div {
+        padding: 0.5em 0em;
+    }
+}
+
+footer * {
+    color: #fff;
+}
