@@ -4,3 +4,5 @@ src/scss/.sass-cache/
 *.map
 .vscode/
 .sass-cache/
+aphrodite/style/style.css
+*.css.map
