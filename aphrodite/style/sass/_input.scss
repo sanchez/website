@@ -1,5 +1,5 @@
 
-button, input[type=text], textarea {
+button, input[type=text], textarea, input[type=radio] {
     background-color: #fff;
     border: solid 0.2em $primary;
     display: block;
@@ -16,4 +16,26 @@ button:hover {
 
 input[type=text], textarea {
     padding: 0.4em 0.2em;
+}
+
+input[type=radio] {
+    margin: 0em;
+    background-color: #fff;
+    border: $primary solid 0.2em;
+    display: block;
+    -webkit-appearance: button;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    box-sizing: content-box;
+    padding: 0.3em;
+    background-clip: content-box;
+}
+
+input[type=radio]:hover {
+    background-color: lighten($primary, 20%);
+}
+
+input[type=radio]:checked {
+    background-color: $primary;
 }
