@@ -1,5 +1,5 @@
 
-button, input[type=text] {
+button, input[type=text], textarea {
     background-color: #fff;
     border: solid 0.2em $primary;
     display: block;
@@ -14,6 +14,6 @@ button:hover {
     background-color: darken(#fff, 10%);
 }
 
-input[type=text] {
+input[type=text], textarea {
     padding: 0.4em 0.2em;
 }
