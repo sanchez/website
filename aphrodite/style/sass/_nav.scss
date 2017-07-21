@@ -1,0 +1,21 @@
+nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    * {
+        font-size: 1.5em;
+        text-decoration: none;
+        transition: border-bottom 0.2s;
+    }
+
+    *:hover {
+        border-bottom: solid 0.1em;
+    }
+
+    * + * {
+        margin-left: 0.4em;
+    }
+}

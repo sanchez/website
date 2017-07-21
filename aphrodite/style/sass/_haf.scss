@@ -8,6 +8,31 @@ body {
     }
 }
 
+header {
+    background-color: $header-primary;
+    min-height: 4em;
+    color: #fff;;
+    align-items: center;
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: $grid-max-width;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 4em;
+    }
+
+
+    * {
+        color: #fff;
+    }
+}
+
 footer {
     background-color: $footer-primary;
     min-height: 8em;
