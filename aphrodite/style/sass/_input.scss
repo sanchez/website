@@ -1,0 +1,19 @@
+
+button, input[type=text] {
+    background-color: #fff;
+    border: solid 0.2em $primary;
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.2em 0.8em;
+    outline: none;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: darken(#fff, 10%);
+}
+
+input[type=text] {
+    padding: 0.4em 0.2em;
+}
