@@ -1,5 +1,5 @@
 
-button, input[type=text], textarea, input[type=radio] {
+button, input[type=text], textarea, input[type=radio], input[type=checkbox] {
     background-color: #fff;
     border: solid 0.2em $primary;
     display: block;
@@ -18,7 +18,7 @@ input[type=text], textarea {
     padding: 0.4em 0.2em;
 }
 
-input[type=radio] {
+input[type=radio], input[type=checkbox] {
     margin: 0em;
     background-color: #fff;
     border: $primary solid 0.2em;
@@ -38,4 +38,8 @@ input[type=radio]:hover {
 
 input[type=radio]:checked {
     background-color: $primary;
+}
+
+input[type=checkbox] {
+    border-radius: 0;
 }
